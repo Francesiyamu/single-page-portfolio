@@ -1,0 +1,26 @@
+@function color($color-type) {
+    @return map-get($colors, $color-type);
+}
+
+@mixin headingXl{
+    font-size: 88px;
+    line-height: 88%;
+    letter-spacing: -2.5px;
+}
+
+@mixin headingL{
+    font-size: 48px;
+    line-height: 56%;
+    letter-spacing: -1.5px;
+}
+
+@mixin headingM{
+    font-size: 24px;
+    line-height: 32%;
+    letter-spacing: -1.5px;
+}
+
+@mixin paragraphFont{
+    font-size: 18px;
+    line-height: 28%;
+}
