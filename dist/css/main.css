@@ -39,6 +39,7 @@ body {
   margin: 0 auto;
 }
 
+/*-----description section----*/
 .description {
   width: 70%;
   max-width: 706px;
@@ -84,4 +85,12 @@ body {
 }
 .description .contact-me:hover::after {
   width: 100%;
+}
+
+/*-----skills section----*/
+#skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
 }/*# sourceMappingURL=main.css.map */

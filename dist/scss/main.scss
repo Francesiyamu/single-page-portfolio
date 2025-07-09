@@ -33,6 +33,7 @@ body{
     }
 }
 
+/*-----description section----*/
 .description{
     width: 70%;
     max-width: 706px;
@@ -67,7 +68,6 @@ body{
         font-weight: bold;
         text-transform: uppercase;
         display: inline-block;
-        
 
         &::after{
             content: '';
@@ -82,4 +82,14 @@ body{
              width: 100%;
         }
     }
+}
+
+
+/*-----skills section----*/
+
+#skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
 }
