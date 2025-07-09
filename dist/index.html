@@ -12,15 +12,15 @@
 
   <main>
     <div>
-      <div>
+      <header class="logo-links">
         <p>adamkeyes</p>
-        <figure>
-          <img src="assets/images/icon-github.svg" alt="">
-          <img src="assets/images/icon-frontend-mentor.svg" alt="" srcset="">
-          <img src="assets/images/icon-linkedin.svg" alt="">
-          <img src="assets/images/icon-twitter.svg" alt="">
-        </figure>
-      </div>
+        <nav>
+          <a href="#"><img src="assets/images/icon-github.svg" alt=""></a>
+          <a href="#"><img src="assets/images/icon-frontend-mentor.svg" alt="" srcset=""></a>
+          <a href="#"><img src="assets/images/icon-linkedin.svg" alt=""></a>
+          <a href="#"><img src="assets/images/icon-twitter.svg" alt=""></a>
+        </nav>
+      </header>
       <div>
         <h1>Nice to meet you! I'm Frances Iyamu.</h1>
         <p>Professionally active with a strong interest in technology and user-friendly digital applications. Over the past period, I have further deepened my skills in front-end development, focusing on HTML, CSS, JavaScript, and SQL. 
@@ -28,13 +28,8 @@
         </p>
         <a href="#">Contact me</a>
       </div>
-      <picture>
-        <source media="(min-width: 320px)" srcset="assets/images/image-profile-mobile.webp" sizes="">
-        <source media="(min-width: 400px)" srcset="assets/images/image-profile-tablet.webp" sizes="">
-        <img src="assets/images/image-profile-desktop.webp" alt="profile-picture">
-      </picture>
-
-      <section>
+      <!----skills section--->
+      <section class="skills">
         <div>
           <h2>HTML</h2>
           <p>1 Years Experience</p>
@@ -52,62 +47,57 @@
           <p>3months Experience</p>
         </div>
       </section>
+      <!----project section--->
       <section class="projects">
+        <h3>Projects</h3>
         <div>
-         
+          <picture class="">
+            <source media="(max-width: 900px)" srcset="assets/images/thumbnail-project-1-small.webp">
+            <img src="assets/images/thumbnail-project-1-large.webp" alt="project1">
+          </picture>
+          <h4>Design portfolio</h4>
+          <p>html, css</p>
+          <div class="flex-row"><p>view project</p> <p>view code</p></div>
+        </div>
+        <div>
+          <picture>
+            <source media="(max-width:900px)" srcset="assets/images/thumbnail-project-2-small.webp">
+            <img src="assets/images/thumbnail-project-2-large.webp" alt="project">
+          </picture>
+          <h4>E-learning landing page</h4>
+          <p>Html css</p>
+          <div class="flex-row"><p>view project</p> <p>view code</p></div>
         </div>
       </section>
-  
+      <!----contact section--->
+      <section class="contact">
+        <div class="contact-flex">
+          <div class="contact-right-box">
+            <h2>Contact</h2>
+            <p>I would love to hear about your project and how I could help. Please 
+              fill in the form, and I’ll get back to you as soon as possible.
+            </p>
+          </div>
+          <form action="">
+            <input type="text" name="" id="" required>
+            <input type="email" name="" id="" required>
+            <textarea name="" id="" cols="30" rows="20" required>Message</textarea>
+            <input type="submit" value="Send Message">
+          </form>
+        </div>
+        <hr>
+      </section>
 
-  
-  
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
+      <footer>
+        <p>adamkeyes</p>
+        <nav>
+          <a href="#"><img src="assets/images/icon-github.svg" alt=""></a>
+          <a href="#"><img src="assets/images/icon-frontend-mentor.svg" alt="" srcset=""></a>
+          <a href="#"><img src="assets/images/icon-linkedin.svg" alt=""></a>
+          <a href="#"><img src="assets/images/icon-twitter.svg" alt=""></a>
+        </nav>
+      </div>
+      </footer>
     </div>
   </main>
 
