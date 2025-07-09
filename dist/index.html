@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
 
-  <main>
-    <div>
+  <main id="main-container">
+    <div id="grid-content">
       <header class="logo-links">
         <p>adamkeyes</p>
         <nav>
@@ -21,15 +23,17 @@
           <a href="#"><img src="assets/images/icon-twitter.svg" alt=""></a>
         </nav>
       </header>
-      <div>
-        <h1>Nice to meet you! I'm Frances Iyamu.</h1>
+      <div class="description">
+        <h1>Nice to meet you!
+          I'm <span> Frances Iyamu.</span>
+        </h1>
         <p>Professionally active with a strong interest in technology and user-friendly digital applications. Over the past period, I have further deepened my skills in front-end development, focusing on HTML, CSS, JavaScript, and SQL. 
           I gain energy from transforming UI/UX designs into high-performing and intuitive web applications. I am open to opportunities where I can further apply and develop my front-end knowledge within a progressive work environment.
         </p>
-        <a href="#">Contact me</a>
+        <a href="#" class="contact-me">Contact me</a>
       </div>
       <!----skills section--->
-      <section class="skills">
+      <section id="skills">
         <div>
           <h2>HTML</h2>
           <p>1 Years Experience</p>
@@ -48,7 +52,7 @@
         </div>
       </section>
       <!----project section--->
-      <section class="projects">
+      <section id="projects">
         <h3>Projects</h3>
         <div>
           <picture class="">
@@ -70,7 +74,7 @@
         </div>
       </section>
       <!----contact section--->
-      <section class="contact">
+      <section id="contact">
         <div class="contact-flex">
           <div class="contact-right-box">
             <h2>Contact</h2>
