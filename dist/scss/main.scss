@@ -101,7 +101,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin: 2rem auto;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -116,7 +116,7 @@ body{
      }
 
      .project-flex{
-         @include flexCenter($justify: space-between); 
+         @include flexCenter(space-between); 
          gap: 3rem;
 
         .project-boxes{
@@ -140,7 +140,7 @@ body{
             }
 
             .flex-row{
-                @include flexCenter;
+                @include flexCenter(center);
                 flex-direction: column;
                 gap : 10px;
                 
@@ -169,3 +169,102 @@ body{
      }
      
 }
+
+/*-----contact section----*/
+#contact{
+    background-color: color("dark grey");
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    .contact-flex{
+        @include flexCenter(space-between);
+        width: 1000px;
+        height: 327px;
+        margin: 0 auto;
+        gap: 50px;
+
+        .contact-left-box{
+            flex: 40%;
+
+            h2{
+                @include headingL;
+                margin-bottom: 1em;
+            }
+
+            p{
+                @include paragraphFont
+            }
+        }
+
+        .contact-right-box{
+            @include flexCenter(center);
+            flex: 40%;
+            flex-direction: column;
+
+            .input-wrapper{
+                width: 100%;
+                position: relative;
+
+                input,
+                textarea{
+                width: 100%;
+            }
+
+            input[type = text],
+            input[type=  email]{
+                height: 40px;
+                margin-bottom: 10px;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                display: block;
+                color: color("light-grey");
+                border-bottom: 1px solid color("light-grey");
+
+                &::placeholder{
+                    color: color("light-grey");
+                    }
+                }
+
+            textarea{
+                height: 40px;
+                margin-bottom: 10px;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                display: block;
+                color: color("light-grey");
+                border-bottom: 1px solid color("light-grey");
+
+                &::placeholder{
+                    color: color("light-grey");
+                    }
+                }
+            }
+
+            .submit-btn{
+                    text-transform: uppercase;
+                    padding: 1em 2em;
+                    margin-left: auto; // Pushes button to the right
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    display: block;
+                    color: color("light-grey");
+                    
+                    &::after{
+                    content: '';
+                    display: block;
+                    height: 0.3rem;
+                    background-color: color("green");
+                    width: 100%;
+                    }
+
+                    &:hover{
+                        color: color("green");
+                    }
+                }
+        }
+    }
+}
+

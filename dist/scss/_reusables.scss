@@ -29,7 +29,7 @@
     font-weight: 400;
 }
 
-@mixin flexCenter ($justify: space-between){
+@mixin flexCenter ($justify){
     display: flex;
     align-items: center;
     justify-content: $justify;
